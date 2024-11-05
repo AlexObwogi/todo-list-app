@@ -32,7 +32,7 @@ function displayTasks() {
 
         // Delete button as "X"
         const deleteButton = document.createElement("button");
-        deleteButton.innerText = "✕"; // Unicode for "X"
+        deleteButton.innerText = "X"; // Unicode for "X"
         deleteButton.classList.add("delete-button");
         deleteButton.onclick = () => deleteTask(index);
         taskDiv.appendChild(deleteButton);
@@ -69,6 +69,5 @@ function deleteTask(index) {
 
 // Add event listener for the add button
 addButton.addEventListener("click", addTask);
-
 // Initial display of tasks on page load
 document.addEventListener("DOMContentLoaded", displayTasks);
