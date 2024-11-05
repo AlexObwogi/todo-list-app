@@ -8,17 +8,23 @@ body {
     justify-content: center;
     align-items: center;
     display: flex;
-    width: 100%;
+    width: 100% auto;
+    border-radius: 30px;
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
 }
 .container{
     display: flex;
     flex-direction: column;
-    padding: 10px;
-    border: none;
-    border-radius: 20px;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    border: 1px;
+    border-radius: 12px;
     color: black;
     justify-content: center;
-    width: 80%;
+    width: auto;
     background: linear-gradient(180deg, purple, white);
 }
 h1{
@@ -26,13 +32,22 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: linear-gradient(180);
     margin-top: 20px;
     margin-bottom: 20px;
     color: white;
     font-size: 30px;
     font-weight: 600px;
 
+}
+h2{
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 5px;
+    align-self: center;
+    font-family: sans-serif;
+    border: 0px;
+    width: auto;
 }
 p{
     font-size: 19px;
@@ -43,32 +58,97 @@ p{
     display: flex;
 }
 input{
-    padding: 10px;
+    padding: 5px;
+    height: 30px;
     box-shadow: 2px 3px 4px 2px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: none;
+    border: 0px;
     border-radius: 10px;
-    width: 60%;
+    width: 1;
     
 }
 button{
-    display: flexbox;
     justify-content: center;
     align-items: center;
-    background-color: red;
+    background-color: lightseagreen;
     color: white;
     box-shadow: 2px 2px 4px 4px;
-    width: 40px;
+    width: 100px;
     height: 40px;
+    box-shadow: 1px 3px 1px 2px;
     margin-bottom: 10px;
     margin-top:10px;
-    border-radius: 50%;
-    align-self: flex-end;
+    border-radius: 10px;
+    cursor: pointer;
+    align-self: center;
 }
 
 button:hover{
     background-color: aqua;
+    color: black;
+}
+h3{
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 50px;
+    border: none;
+    padding: 5px;
+}
+textarea{
+    resize: none;
+    width: auto;
+    height: 40px;
+    padding: 5px;
+    border-radius: 10px;
+    justify-content: center;
+    border: 0px;
+    align-items: center;
+    margin-bottom: 10px;
+    color: black;
+    box-shadow: 1px 3px 1px 2px;
+}
+/* Set max height for task list and make it scrollable */
+.task-list {
+    max-height: 150px;  /* Adjust as needed */
+    overflow-y: auto;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 4px 8px 5px;
+}
+
+/* Task item styling */
+.task {
+    display: flex;
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 4px 2px 4px 2px;
+}
+
+/* Styling for the delete button as an "X" icon */
+.delete-button {
+    background: none;
+    border: 0px;
+    background-color: lightseagreen;
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-weight: 50px;
+    color: white;
+    border-radius: 50%;
+}
+
+.delete-button:hover {
+    color: aqua;
     color: black;
 }
